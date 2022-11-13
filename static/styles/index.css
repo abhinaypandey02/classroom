@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding: 10px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+#logo{
+    height: auto;
+    width: 10vw;
+}
+
+.align_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1140px){
+    #logo{
+        width: 15vw;
+    }
+}
+@media screen and (max-width: 780px){
+    #logo{
+        width: 20vw;
+    }
+}
+@media screen and (max-width: 615px){
+    #logo{
+        width: 25vw;
+    }
+}
+@media screen and (max-width: 370px){
+    #logo{
+        width: 30vw;
+    }
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO whiteboard</title>
+    <link rel="stylesheet" href="./static/styles/consoles/t_console.css">
+    <link rel="stylesheet" href="./static/styles/mq/consoles/t_console.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="whiteboard-container">
+            <canvas class="whiteboard"></canvas>
+        </div>
+
+        <div class="panel-container">
+            <div class="btn-group">
+                <div class="group1">
+                    <button class="btn" id="prev">Prev</button>
+                    <button class="btn" id="next">Next</button>
+                    <button class="btn" id="clear">Refresh</button>
+                </div>
+                <div class="group2">
+                    <button class="icon_btn" id="voice">
+                        <span class="tooltiptxt">Voice</span>
+                        <img id="mic" class="icons" src="/static/images/icons/voice-recorder-mute.png" alt="">
+                    </button>
+                    <button class="icon_btn" id="white">
+                        <span class="tooltiptxt">Whiteboard</span>
+                        <img class="icons" src="/static/images/icons/whiteboard.png" alt="">
+                    </button>
+                </div>
+
+            </div>
+            <div class="chat-msg-send">
+                <input id="chat-input" type="text">
+                <input type="submit" id="send" value="Send Message">
+            </div>
+
+
+            <div class="chat-box">
+                <span>
+                    <b style="font-weight: 900; ">
+                        ------
+                    </b>
+                </span>
+                <!-- <div id="chat"></div> -->
+            </div>
+            <div id="attendance">
+
+                <span>
+                    <b style="font-weight: 700; ">
+                        ATTENDANCE
+                    </b>
+                </span>
+                <!-- <div id="chat"></div> -->
+            </div>
+        </div>
+    </div>
+
+    <!script src="https://code.jquery.com/jquery-1.10.2.min.js">
+        </script>
+        <script src="https://cdn.socket.io/3.1.3/socket.io.min.js"
+            integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh"
+            crossorigin="anonymous"></script>
+        <script src="./static/scripts/t_console.js"></script>
+        <script src="./static/scripts/mic.js"></script>
+        <script src="./static/scripts/clearMessage.js"></script>>
+
+</body>
+
+</html>

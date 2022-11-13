@@ -1,0 +1,42 @@
+@media screen and (max-width: 1140px){
+    form{
+        width: 30vw;
+    }
+    .image{
+        width: 55vw;
+    }
+}
+@media screen and (max-width: 780px){
+    form{
+        width: 50vw;
+    }
+    .image{
+        display: none;
+    }
+}
+@media screen and (max-width: 615px){
+    .h_con{
+        padding-top: 8vh;
+    }
+    #ic1{
+        font-size: 3rem;
+        margin-bottom: 5vh;
+    }
+    form{
+        width: 70vw;
+    }
+    label{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 370px){
+    #ic1{
+        font-size: 2.7rem;
+    }
+    form{
+        width: 90vw;
+    }
+    .image{
+        width: 100vw;
+    }
+}

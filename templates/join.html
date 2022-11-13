@@ -1,0 +1,60 @@
+{% extends "index.html" %}
+{% block title %} Home {% endblock title %}
+{% block css %}
+
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!--Local Styles-->
+<link rel="stylesheet" href="/static/styles/home/home.css">
+<link rel="stylesheet" href="/static/styles/home/btn.css">
+<link rel="stylesheet" href="/static/styles/mq/home/home.css">
+{% endblock css %}
+
+<body>
+    {% block body %}
+    <div class="h_con">
+        <div class="intro_con">
+            <p id="ic1">Where Education Meets AI</p>
+            <form class="" action="/join" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" class="form-control" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="room">Room ID:</label>
+                    <input type="text" class="form-control" id="room" name="room" required>
+                </div>
+                </br></br>
+                <svg>
+                    <defs>
+                        <filter id="gooey">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                            <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+                            <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <button id="gooey-button" type="submit" name="button">
+                    Join Room
+                    <span class="bubbles">
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                    </span>
+                </button>
+
+            </form>
+        </div>
+        <img class="image" src="/static/images/home.jpg" alt="ClassRoom 3.0">
+    </div>
+    {% endblock body %}
+</body>

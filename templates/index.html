@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %} | Classroom 3.0 </title>
+    <link rel="stylesheet" href="/static/styles/index.css">
+    {% block css %}
+
+    {% endblock css %}
+</head>
+
+<body>
+    <header class="autofix">
+        <img id="logo" src="/static/images/logo.jpg" alt="ClassRoom 3.0">
+
+    </header>
+    {% block body %}
+
+    {% endblock body %}
+</body>
+
+</html>
+<!--http://127.0.0.1:5000/console_panel?id=t&room=612b4cc58aa18e6513d59c68&name=subin&pin=927975-->

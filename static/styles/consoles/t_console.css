@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+}
+html{
+    overflow-x: hidden;
+}
+/* Container */
+.container{
+  display: flex;
+  width: 100vw;
+}
+
+/* Containers */
+.whiteboard-container{
+  width: auto;
+  flex: 1;
+}
+.whiteboard{
+    height: 100%;
+    width: 100%;
+}
+
+.panel-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 30%;
+  background-color: #edf8fa;
+}
+
+/* Group 1 */
+.group1{
+  display: flex;
+  align-items: center;
+  
+}
+
+/* Buttons */
+
+.btn-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  padding: 0.5rem;
+  
+}
+
+.btn{
+  padding: 0.5rem;
+  margin: 0 12px 0;
+  color: white;
+  background-color: rgb(29, 214, 219);
+  border: 1px solid rgb(29, 214, 219);
+  box-shadow: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: white;
+  color: rgb(29, 214, 219);
+}
+
+
+/* Group 2 */
+
+.group2{
+  
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.icons{
+  width: 24px;
+  height: auto;
+}
+
+.icon_btn{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  box-shadow: 0px 0px 2px 0px #201d1da3;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.icon_btn:hover{
+  box-shadow: 0px 0px 4px 0px #201d1da3;
+}
+.icon_btn:hover .tooltiptxt {
+  visibility: visible;
+}
+
+/* Tooltip */
+
+.tooltiptxt{
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 106%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+/* Chat Section */
+
+.chat-msg-send{
+  display: flex;
+  padding: 1rem;
+}
+
+
+input[type="text"]{
+  width: 10rem;
+  height: 2rem;
+}
+
+#send{
+  padding: 0.5rem;
+  margin: 0 12px 0;
+  color: white;
+  background-color: rgb(29, 214, 219);
+  border: 1px solid rgb(29, 214, 219);
+  box-shadow: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#send:hover{
+  background-color: white;
+  color: rgb(29, 214, 219);
+
+}
+
+.chat-box{
+  text-align: center;
+  max-height: 60%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 0px #201d1da6;
+  padding: 0.6rem;
+  margin: 0.4rem;
+  transform: scale(1,-1);
+}
+
+#chat{
+  text-align: left;
+  transform: scale(1,-1);
+}

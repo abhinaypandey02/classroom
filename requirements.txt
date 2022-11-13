@@ -1,0 +1,12 @@
+Flask
+Flask-PyMongo
+pymongo[srv]
+python-dotenv
+gunicorn
+flask-socketio
+simple-websocket
+dnspython==1.16.0
+eventlet==0.30.2
+gevent-websocket
+requests
+pdf2image
