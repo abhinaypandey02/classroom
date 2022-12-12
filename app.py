@@ -89,7 +89,7 @@ def home():
             shutil.copytree("./static/slides/demo", filename+'/img')
         if file and allowed_file(file.filename):
             file.save(filename+'/pdf/raw.pdf')
-            images = convert_from_path(filename+'/pdf/raw.pdf',poppler_path=r'C:\Program Files\poppler\bin')
+            images = convert_from_path(filename+'/pdf/raw.pdf')
             for i in range(len(images)):
                 images[i].save(filename+'/img/'+str(i)+'.jpg','JPEG')
         return redirect(url_for('success'))
